@@ -5,7 +5,7 @@ class Grades
 
     results = ["Green", "Amber", "Red"]
 
-    test_result = list.delete(" ").split(",").map { |result| result.capitalize }
+    test_result = list.delete(" ").split(",").map { |result| result.capitalize}
 
     output_array = []
 

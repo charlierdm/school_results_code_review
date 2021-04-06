@@ -22,6 +22,10 @@ describe Grades do
     expect(subject.scores("red, Green, Amber, amber")).to eq("Green: 1\nAmber: 2\nRed: 1")
   end
 
+  it 'accounts for list items that are not the correct colours' do
+    expect(subject.scores("Red, blue, Green, green, yellow")).to eq("Green: 2\nRed: 1\nUncounted: 2")
+  end
+
 
   
 end
